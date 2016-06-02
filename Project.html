@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  
+<title>Magic App V1</title>
+</head>
+<body>
+<h1>Magic App V1</h1>
+<section id="input">
+
+        <h1>Sign Up Here</h1>
+        
+        <label>Player Name</label>
+        <input class="form-control" id="name" type="text" maxlength="30" value= "" name="name" placeholder="Name">
+        
+        <label>User Name</label>
+        <input class="form-control" id="user" type="text" maxlength="30" value= "" name="name" placeholder="User Name">
+        
+        <label>Email Address</label>
+        <input class="form-control" id="email" type="text" maxlength="30" value= "" name="name" placeholder="Email">
+        
+        <label>Confirm Email Address</label>
+        <input class="form-control" id="cemail" type="text" maxlength="30" value= "" name="name" placeholder="Confirm Email">
+        
+        <label>Password</label>
+        <input class="form-control" id="pass" type="text" maxlength="30" value= "" name="name" placeholder="Password">
+        
+        <label>Confirm Password</label>
+        <input class="form-control" id="cpass" type="text" maxlength="30" value= "" name="name" placeholder="Confirm Password">
+        
+        <button type="button" class="btn btn-success">Save</button> 
+        <button type="button" class="btn btn-reset">Cancel</button>
+        <a href="#"></a>
+        
+        </section>
+
+
+<section id="input">
+
+ <h1>Login</h1>
+                        
+        <label>User Name:</label>
+        <input class="form-control" id="user1" type="text" maxlength="30" value= "" name="name" placeholder="User Name">
+        
+        <label>Password:</label>
+        <input class="form-control" id="pass1" type="text" maxlength="30" value= "" name="name" placeholder="Password">
+        
+        <button type="button" class="btn btn-success1">Log In</button> 
+        <button type="button" class="btn btn-reset">Cancel</button>
+        <a href="#"></a>
+        
+               
+
+    </section>
+
+
+
+<section id="input">
+
+         <h1>Deck Info</h1>
+                        
+        <label>Deck Creater:</label>
+        <input class="form-control" id="create" type="text" value= "" name="name" placeholder="Deck Creater">
+        
+        <label>Deck Name:</label>
+        <input class="form-control" id="deck" type="text" value= "" name="name" placeholder="Deck Name">
+        
+        <label>Format:</label>
+        <input class="form-control" id="format" type="text" value= "" name="name" placeholder="Format">
+                     
+        <button type="button" class="btn btn-success2">Add Info</button> 
+        <button type="button" class="btn btn-reset">Cancel</button>
+        <a href="#"></a>
+        
+        </section>
+
+
+<section id="input">
+
+        <h1>Deck Creater</h1>
+
+        <label>Deck List:</label>
+        <textarea class="form-control" id="decklist" type="text" value="" placeholder="Enter one card at time.  Deck List: Example = 1x Card Name
+          99 Card Name 2
+          Ignored line
+          9999x Card Name 3
+
+          Sideboard|sideboard|Sideboard:
+          2x and one at a time" name="name"></textarea>
+        
+        <button type="button" class="btn btn-success3">Add Deck</button> 
+        <button type="button" class="btn btn-reset">Cancel</button>
+
+
+</section>
+
+        <section id="input">
+
+         <h1>Wish List</h1>
+         
+        <label>Wish list:</label>
+        <input class="form-control" id="wlist" type="text" value= "" name="name" placeholder="Wish List">
+                        
+        <button type="button" class="btn btn-success4">Add WishList</button> 
+        <button type="button" class="btn btn-reset">Cancel</button>
+        <a href="#"></a>
+        
+        
+
+    </section>
+
+    <section id="input">
+
+         <h1>Collection</h1>
+        
+        <label>Collection list:</label>
+        <input class="form-control" id="clist" type="text" value= "" name="name" placeholder="Collection List">
+                        
+        <button type="button" class="btn btn-success5">Add Collection</button> 
+        <button type="button" class="btn btn-reset">Cancel</button>
+        <a href="#"></a>
+        
+        
+
+    </section>
+ 
+<section id="input">
+
+<h1>Table</h1>
+<button type="button" class="btn btn-success6">Update Table</button>
+
+</section>
+
+<div class="deck-list"></div>
+  </div>
+    
+
+    <section id="data">
+            <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>User Name</th>
+                      <th>Email</th>
+                      <th>Deck List</th>
+                      <th>Collection List</th>
+                      <th>Wish List</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- LOAD MAGIC INFO HERE -->
+              </tbody>
+            </table>
+        </section>
+  
+ <script src="https://code.jquery.com/jquery-1.12.2.js"   integrity="sha256-VUCyr0ZXB5VhBibo2DkTVhdspjmxUgxDGaLQx7qb7xY="   crossorigin="anonymous"></script>
+ <script type="text/javascript" src="../fetch.js"></script>
+ <script type="text/javascript" src="C:\Users\ArtofCode\Desktop\Project App\PMagic.js"></script>
+  </body>
+
+
+
+</html>
