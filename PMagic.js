@@ -56,26 +56,26 @@ var currentprofile, holder;
 		
 		
 	}
-
+	// Making another constructor function
 	function MyDeck(decklist) {
-
+		// Declaring more properties of my constructor function
 		this.decklist = decklist;
 		this.mydeck = [];
 
 	}
 
-	// Making my constructor function
+	// Making another constructor function
 	function MagicWishInfo(wlist) {
 
-		// Declaring properties of my constructor function	
+		// Declaring more properties of my constructor function	
 		this.wlist = wlist;
 
 	}
 
-	// Making my constructor function
+	// Making another constructor function
 	function MagicCollectionInfo(clist) {
 
-		// Declaring properties of my constructor function	
+		// Declaring more properties of my constructor function	
 		this.clist = clist;
 		
 	}
@@ -95,7 +95,7 @@ loadMagicTable();
 			}
 		}
 	}
-
+	// Making another method that search for Magic player profile
 	MagicPlayer.prototype.get_profile1 = function(currentprofile) {
 		for (var i = 0; i < magicDB.length; i++) {
 			if (currentprofile.username === magicDB[i].username && currentprofile.password === magicDB[i].password) {
@@ -118,7 +118,7 @@ loadMagicTable();
 		}
 	}
 	
-	// Making a method that will hold Deck info
+	// Making a method that will hold Deck info object
 	MagicDecksInfo.prototype.hold = function(MagicDecksInfo) {
 
 				holder = MagicDecksInfo;
@@ -126,7 +126,7 @@ loadMagicTable();
 				
     }
 
-// Making a method that will get the deck info the set unknown
+// Making a method that will get the deck info the set unknown for future version
 	MagicPlayer.prototype.get_deck = function(currentprofile) {
 
 		for (var i = 0; i < magicDB.length; i++) {
@@ -151,7 +151,7 @@ loadMagicTable();
 
 	}
 
-	// Making a method that will add the deck and sideboard to MagicDecksInfo's decks array
+	// Making a method that will add the cards to MagicDecksInfo's mydeck array
 	MyDeck.prototype.add_card = function(MyDeck) {
 		
 		
@@ -160,7 +160,7 @@ loadMagicTable();
 
 	}
 
-	// Making a method that will add the deck and sideboard to MagicDecksInfo's decks array
+	// Making a method that will add the deck and sideboard to MagicDecksInfo's deck1 array
 	MagicDecksInfo.prototype.add_deck = function(MyDeck) {
 		
 		
@@ -207,7 +207,7 @@ loadMagicTable();
 
 		}	*/
 	}
-
+// This button take user info and sign up the user save to mock database and get the user info
 $('button.btn.btn-success').on('click', function() {
      // Get values from input fields
      var nameValue = $('#name').val();
@@ -230,7 +230,7 @@ $('button.btn.btn-success').on('click', function() {
 
     
 });
-
+// Button that logs in a user
 $('button.btn.btn-success1').on('click', function() {
      // Get values from input fields
      var user1Value = $('#user1').val();
@@ -249,7 +249,7 @@ $('button.btn.btn-success1').on('click', function() {
 
     
 });
-
+// Button that create info about a deck
 $('button.btn.btn-success2').on('click', function() {
      // Get values from input fields
      var createValue = $('#create').val();
@@ -262,7 +262,7 @@ $('button.btn.btn-success2').on('click', function() {
 
         
 });
-
+// Button that add a card to deck
 $('button.btn.btn-success3').on('click', function() {
      // Get values from input fields
      var decklistValue = $('#decklist').val();
@@ -282,7 +282,7 @@ $('button.btn.btn-success3').on('click', function() {
 
     
 });
-
+// Button that add to collection list
 $('button.btn.btn-success5').on('click', function() {
      // Get values from input fields
      var clistValue = $('#clist').val();
@@ -298,7 +298,7 @@ $('button.btn.btn-success5').on('click', function() {
 
     
 });
-
+// Button add to the wish list
 $('button.btn.btn-success4').on('click', function() {
      // Get values from input fields
      var wlistValue = $('#wlist').val();
